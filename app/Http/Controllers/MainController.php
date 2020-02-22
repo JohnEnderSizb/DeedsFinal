@@ -26,9 +26,9 @@ class MainController extends Controller
 
     public function processCreate(Request $request) {
 
-        $randomNumber = rand(1000000000000000,9999999999999999);
+        $randomNumber = rand(10000000,99999999);
 
-        $qr_code = $request["ref_num"] . $randomNumber;
+        $qr_code =  $randomNumber;
 
 
         $deed = new Deed();
