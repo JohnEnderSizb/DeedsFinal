@@ -12,7 +12,7 @@ class MainController extends Controller
 {
     public function index() {
         //$deeds = Deed::all();
-        $deeds = DB::table('deeds')->paginate(15);
+        $deeds = DB::table('deeds')->orderBy('id', 'desc')->paginate(15);
 
         return view('index',compact('deeds'));
     }
