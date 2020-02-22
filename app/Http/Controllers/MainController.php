@@ -47,14 +47,14 @@ class MainController extends Controller
 
     public function view( Deed $deed ) {
         $image = QrCode::format('png')->merge("logo.png", 0.3, true)
-            ->size(200)->errorCorrection('H')
+            ->size(200)->errorCorrection('H')->color(64, 64, 173)
             ->generate($deed->qr_code);
         return view("view", compact("deed", "image"));
     }
 
     public function qr_code($qr_code) {
-        $pngImage = QrCode::format('png')->merge('logo.png', 0.3, true)
-            ->size(500)->errorCorrection('H')
+        $pngImage = QrCode::format('png')
+            ->size(500)->errorCorrection('H')->color(64, 64, 173)
             ->generate($qr_code);
 
         return response($pngImage)->header('Content-type','image/png');
