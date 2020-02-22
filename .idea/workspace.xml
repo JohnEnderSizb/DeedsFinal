@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32f13a2-22e3-41a1-9f22-9578cc7efe61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/AppUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Device.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DevicesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_17_220214_create_devices_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_17_231638_create_app_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/index_blade.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/devices/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/devices/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/view.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Deeds.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Deeds.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Deed.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Deed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_17_193422_create_deeds_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_17_193422_create_deeds_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +165,7 @@
       <workItem from="1581999700603" duration="205000" />
       <workItem from="1582044658537" duration="13960000" />
       <workItem from="1582333980308" duration="949000" />
-      <workItem from="1582334994987" duration="17558000" />
+      <workItem from="1582334994987" duration="18911000" />
     </task>
     <servers />
   </component>
@@ -201,6 +176,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="404" y="296" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582384311238">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="404" y="296" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.984@0.0.1280.984" timestamp="1582384311238" />
     <state x="424" y="213" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582343264816">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
