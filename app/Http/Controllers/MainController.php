@@ -54,7 +54,7 @@ class MainController extends Controller
 
     public function qr_code($qr_code) {
         $pngImage = QrCode::format('png')->merge('logo.png', 0.3, true)
-            ->size(500)->errorCorrection('H')->color(64, 64, 173)
+            ->size(400)->errorCorrection('H')->color(64, 64, 173)
             ->generate($qr_code);
 
         return response($pngImage)->header('Content-type','image/png');
