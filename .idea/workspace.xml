@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e32f13a2-22e3-41a1-9f22-9578cc7efe61" name="Default Changelist" comment="" />
+    <list default="true" id="e32f13a2-22e3-41a1-9f22-9578cc7efe61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,6 +168,7 @@
       <workItem from="1582044658537" duration="13960000" />
       <workItem from="1582333980308" duration="949000" />
       <workItem from="1582334994987" duration="19358000" />
+      <workItem from="1582385073108" duration="834000" />
     </task>
     <servers />
   </component>
@@ -206,10 +212,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="335" y="317" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1582334995313" />
-    <state x="370" y="206" width="672" height="776" key="search.everywhere.popup" timestamp="1582334702090">
+    <state x="370" y="206" width="672" height="776" key="search.everywhere.popup" timestamp="1582385632107">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="370" y="206" width="672" height="776" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1582334702090" />
+    <state x="370" y="206" width="672" height="776" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1582385632107" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1582059636508" />
   </component>
 </project>
