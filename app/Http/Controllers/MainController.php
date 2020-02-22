@@ -28,7 +28,7 @@ class MainController extends Controller
 
         $randomNumber = rand(10000000,99999999);
 
-        $qr_code =  $randomNumber;
+        $qr_code = $request["ref_num"] . $randomNumber;
 
 
         $deed = new Deed();
@@ -47,14 +47,14 @@ class MainController extends Controller
 
     public function view( Deed $deed ) {
         $image = QrCode::format('png')->merge("logo.png", 0.3, true)
-            ->size(200)->errorCorrection('H')->color(64, 64, 173)
+            ->size(200)->errorCorrection('H')
             ->generate($deed->qr_code);
         return view("view", compact("deed", "image"));
     }
 
     public function qr_code($qr_code) {
         $pngImage = QrCode::format('png')->merge('logo.png', 0.3, true)
-            ->size(400)->errorCorrection('H')->color(64, 64, 173)
+            ->size(500)->errorCorrection('H')
             ->generate($qr_code);
 
         return response($pngImage)->header('Content-type','image/png');
