@@ -40,7 +40,7 @@
                             </h4>
                         </div>
                     </div>
-                    <img class="card-img-right flex-auto d-none d-md-block" style="width: 200px" src="data:image/png;base64, {!! base64_encode(QrCode::format('png')
+                    <img class="card-img-right flex-auto d-none d-md-block" style="width: 200px" src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->merge('logo.png', 0.3, true)
                         ->size(150)->errorCorrection('H')->color(64, 64, 173)
                         ->generate($deed->qr_code)) !!} ">
                 </div>
