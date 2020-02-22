@@ -30,7 +30,7 @@
     <meta name="author" content="ThemePixels">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
 
     <title>DeedScan</title>
 
@@ -42,6 +42,21 @@
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../../assets/css/dashforge.css">
     <link rel="stylesheet" href="../../assets/css/dashforge.dashboard.css">
+
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+    @yield('styling')
+
+    <style>
+        table {
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207'),
+            linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+            background-repeat: no-repeat, repeat;
+            background-position: right .7em top 50%, 0 0;
+            background-size: .65em auto, 100%;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -49,7 +64,7 @@
     <div class="aside-header">
         <a href="/home"
            style="color: #0168f8"
-           class="aside-logo">Procurement</a>
+           class="aside-logo">DeedScan</a>
         <a href="" class="aside-menu-link">
             <i data-feather="menu"></i>
             <i data-feather="x"></i>
@@ -95,7 +110,6 @@
 
         <ul class="nav nav-aside">
             <li class="nav-item"><a href="/home" class="nav-link"><i data-feather="home" style="color: #0168f8"></i> <span>Home</span></a></li>
-            <li class="nav-item"><a href="/profile/1/admin" class="nav-link"><i data-feather="activity" style="color: #0168f8"></i> <span>Admin.</span></a></li>
             <li class="nav-item"><a href="/profile/1/stats" class="nav-link"><i data-feather="bar-chart-2" style="color: #0168f8"></i> <span>Stats.</span></a></li>
             <li class="nav-item"><a href="/links" class="nav-link"><i data-feather="link" style="color: #0168f8"></i> <span>Quick Links</span></a></li>
             <li class="nav-item"><a href="/home" class="nav-link"><i data-feather="bell" style="color: #0168f8"></i> <span>Notifications</span></a></li>
@@ -121,7 +135,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                                     <li class="breadcrumb-item mt-2"><a href="#">Dashboard</a></li>
-                                    <li class="breadcrumb-item active mt-2" aria-current="page">Sales Monitoring</li>
+                                    <li class="breadcrumb-item active mt-2" aria-current="page">Home</li>
                                     <li class="mt-1 ml-4">
                                         <a href="#" title="Refresh">
                                             <i data-feather="refresh-ccw" class="text-secondary" style="float: right; width: 18px"></i>

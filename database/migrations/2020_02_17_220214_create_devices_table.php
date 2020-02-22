@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDeedsTable extends Migration
+class CreateDevicesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateDeedsTable extends Migration
      */
     public function up()
     {
-        Schema::create('deeds', function (Blueprint $table) {
+        Schema::create('devices', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
-            $table->string('conveyancer');
-            $table->string('ref_num')->unique();
-            $table->string('qr_code')->unique();
-            $table->string('owner');
-            $table->string('description');
+            $table->string('specification');
+            $table->text('description');
+            $table->string('priority');
+            $table->string('due_date');
+            $table->string('status');
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ class CreateDeedsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('deeds');
+        Schema::dropIfExists('devices');
     }
 }
