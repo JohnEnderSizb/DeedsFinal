@@ -20,7 +20,7 @@ class CreateDeedsTable extends Migration
             $table->string('ref_num')->unique();
             $table->string('qr_code')->unique();
             $table->string('owner');
-            $table->string('description');
+            $table->text('description');
             $table->timestamps();
         });
     }

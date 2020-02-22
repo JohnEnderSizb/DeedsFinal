@@ -150,7 +150,7 @@
     <br>
 
 @endsection
-Today I'm working on a Leave Management System. There is
+
 @section('scripts')
 
 @endsection
