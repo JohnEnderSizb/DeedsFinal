@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32f13a2-22e3-41a1-9f22-9578cc7efe61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env_temp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,11 +137,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\JSiziba\Desktop\Ender\Deeds\public" />
       <recent name="C:\Users\JSiziba\Desktop\Ender\Deeds\resources\views" />
       <recent name="C:\Users\JSiziba\Desktop\Ender\Deeds\resources\views\devices" />
@@ -167,6 +171,8 @@
       <workItem from="1582333980308" duration="949000" />
       <workItem from="1582334994987" duration="19358000" />
       <workItem from="1582385073108" duration="8847000" />
+      <workItem from="1583850401648" duration="1079000" />
+      <workItem from="1583855780715" duration="3151000" />
     </task>
     <servers />
   </component>
@@ -177,39 +183,45 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="404" y="296" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582384311238">
-      <screen x="0" y="0" width="1280" height="984" />
+    <state x="431" y="224" width="537" height="383" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583851837410">
+      <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="404" y="296" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.984@0.0.1280.984" timestamp="1582384311238" />
+    <state x="431" y="224" width="537" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.746@0.0.1366.746" timestamp="1583851837410" />
     <state x="424" y="213" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582343264816">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="424" y="213" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.984@0.0.1280.984" timestamp="1582343264816" />
     <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1581978453174" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1581967092901">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1324" height="179" key="GridCell.Tab.0.bottom" timestamp="1583850422276">
+      <screen x="0" y="0" width="1366" height="746" />
     </state>
+    <state width="1324" height="179" key="GridCell.Tab.0.bottom/0.0.1366.746@0.0.1366.746" timestamp="1583850422276" />
     <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1581967092901" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1581967092901">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1324" height="179" key="GridCell.Tab.0.center" timestamp="1583850422276">
+      <screen x="0" y="0" width="1366" height="746" />
     </state>
+    <state width="1324" height="179" key="GridCell.Tab.0.center/0.0.1366.746@0.0.1366.746" timestamp="1583850422276" />
     <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1581967092901" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1581967092901">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1324" height="179" key="GridCell.Tab.0.left" timestamp="1583850422275">
+      <screen x="0" y="0" width="1366" height="746" />
     </state>
+    <state width="1324" height="179" key="GridCell.Tab.0.left/0.0.1366.746@0.0.1366.746" timestamp="1583850422275" />
     <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1581967092901" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1581967092901">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1324" height="179" key="GridCell.Tab.0.right" timestamp="1583850422276">
+      <screen x="0" y="0" width="1366" height="746" />
     </state>
+    <state width="1324" height="179" key="GridCell.Tab.0.right/0.0.1366.746@0.0.1366.746" timestamp="1583850422276" />
     <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1581967092901" />
     <state x="635" y="354" key="NewPhpFileDialog" timestamp="1581977583054">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="635" y="354" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1581977583054" />
-    <state x="335" y="317" key="com.intellij.ide.util.TipDialog" timestamp="1582334995313">
-      <screen x="0" y="0" width="1280" height="984" />
+    <state x="358" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1583855910150">
+      <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="335" y="317" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1582334995313" />
+    <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746@0.0.1366.746" timestamp="1583855910150" />
     <state x="370" y="206" width="672" height="776" key="search.everywhere.popup" timestamp="1582390867959">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

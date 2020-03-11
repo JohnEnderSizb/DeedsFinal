@@ -55,7 +55,7 @@
                     <tr>
                         <td> <button class="btn btn-outline-info">Send QR-Code Via Email</button> </td>
                         <td>
-                            <a href="/view/qr_code/{{ $deed->qr_code }}" download="qr_code_{{ $deed->id }}">
+                            <a href="/view/qr_code/{{ $deed->qr_code }}" download="qr_code_{{ $deed->title }}_{{ $deed->ref_num }}">
                                 <button class="btn btn-outline-info">Download QR-Code</button>
                             </a>
                         </td>
