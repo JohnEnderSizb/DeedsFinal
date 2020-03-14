@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32f13a2-22e3-41a1-9f22-9578cc7efe61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env_temp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Events/Notify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NotificationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Deeds.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Deeds.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +126,8 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/pusher/pusher-php-server" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/sodium_compat" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Xwhr9wN27nRiN2JkIwz3IYdfM9" />
@@ -173,6 +179,9 @@
       <workItem from="1582385073108" duration="8847000" />
       <workItem from="1583850401648" duration="1079000" />
       <workItem from="1583855780715" duration="3151000" />
+      <workItem from="1583924906232" duration="796000" />
+      <workItem from="1584184630643" duration="1309000" />
+      <workItem from="1584202576513" duration="1375000" />
     </task>
     <servers />
   </component>
@@ -217,15 +226,18 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="635" y="354" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1581977583054" />
-    <state x="358" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1583855910150">
+    <state x="358" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1584202580874">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="335" y="317" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1582334995313" />
+    <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584202580874" />
     <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746@0.0.1366.746" timestamp="1583855910150" />
-    <state x="370" y="206" width="672" height="776" key="search.everywhere.popup" timestamp="1582390867959">
-      <screen x="0" y="0" width="1280" height="984" />
+    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup" timestamp="1584203196584">
+      <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="370" y="206" width="672" height="776" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1582390867959" />
+    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584203196584" />
+    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup/0.0.1366.746@0.0.1366.746" timestamp="1583925005562" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1582059636508" />
   </component>
 </project>
