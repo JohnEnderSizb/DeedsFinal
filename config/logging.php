@@ -40,8 +40,8 @@ return [
             'handler' => StreamHandler::class,
             'with' => [
                 'stream' => 'php://stdout',
+                ],
             ],
-
             'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
