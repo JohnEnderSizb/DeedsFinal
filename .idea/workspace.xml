@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32f13a2-22e3-41a1-9f22-9578cc7efe61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Conveyancer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DeedOwner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ScanActivity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ScanActivityNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_111350_create_deed_owners_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_111441_create_conveyancers_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_111457_create_scan_activities_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_133433_create_scan_activity_notifications_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env_remote" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env_local" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NotificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NotificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_17_193422_create_deeds_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_17_193422_create_deeds_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/index_blade.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index_blade.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +195,9 @@
       <workItem from="1583855780715" duration="3151000" />
       <workItem from="1583924906232" duration="796000" />
       <workItem from="1584184630643" duration="1309000" />
-      <workItem from="1584202576513" duration="3208000" />
+      <workItem from="1584202576513" duration="4144000" />
+      <workItem from="1584211473980" duration="26992000" />
+      <workItem from="1584340563605" duration="4765000" />
     </task>
     <servers />
   </component>
@@ -190,10 +213,11 @@
     </state>
     <state x="404" y="296" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.984@0.0.1280.984" timestamp="1582384311238" />
     <state x="431" y="224" width="537" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.746@0.0.1366.746" timestamp="1583851837410" />
-    <state x="424" y="213" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582343264816">
-      <screen x="0" y="0" width="1280" height="984" />
+    <state x="452" y="161" width="524" height="480" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584279712624">
+      <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="424" y="213" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.984@0.0.1280.984" timestamp="1582343264816" />
+    <state x="452" y="161" width="524" height="480" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584279712624" />
     <state x="530" y="186" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1581978453174" />
     <state width="1324" height="179" key="GridCell.Tab.0.bottom" timestamp="1583850422276">
       <screen x="0" y="0" width="1366" height="746" />
@@ -219,17 +243,17 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="635" y="354" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1581977583054" />
-    <state x="358" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1584202580874">
+    <state x="358" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1584211535399">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="335" y="317" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1582334995313" />
-    <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584202580874" />
+    <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584211535399" />
     <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746@0.0.1366.746" timestamp="1583855910150" />
-    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup" timestamp="1584205147045">
+    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup" timestamp="1584279648588">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="370" y="206" width="672" height="776" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1582390867959" />
-    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584205147045" />
+    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584279648588" />
     <state x="395" y="156" width="718" height="589" key="search.everywhere.popup/0.0.1366.746@0.0.1366.746" timestamp="1583925005562" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1582059636508" />
   </component>

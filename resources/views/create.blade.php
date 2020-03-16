@@ -1,105 +1,11 @@
 @extends('home')
 
 @section('styling')
-    <style type="text/css">
-        .select-css {
-            display: block;
-            font-size: 16px;
-            font-family: sans-serif;
-            font-weight: 700;
-            color: #444;
-            line-height: 1.3;
-            padding: .6em 1.4em .5em .8em;
-            width: 100%;
-            max-width: 100%;
-            box-sizing: border-box;
-            margin: 0;
-            border: 1px solid #aaa;
-            box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-            border-radius: .5em;
-            -moz-appearance: none;
-            -webkit-appearance: none;
-            appearance: none;
-            background-color: #fff;
-            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-            linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
-            background-repeat: no-repeat, repeat;
-            background-position: right .7em top 50%, 0 0;
-            background-size: .65em auto, 100%;
-        }
-        .select-css::-ms-expand {
-            display: none;
-        }
-        .select-css:hover {
-            border-color: #888;
-        }
-        .select-css:focus {
-            border-color: #aaa;
-            box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-            box-shadow: 0 0 0 3px -moz-mac-focusring;
-            color: #222;
-            outline: none;
-        }
-        .select-css option {
-            font-weight:normal;
-        }
-
-
-        .form-style-9{
-            max-width: 80%;
-            background: #FFF;
-            padding: 30px;
-            margin: 50px auto;
-            border-radius: 4px;
-            color: #222;
-
-        }
-        .form-style-9 ul{
-            padding:0;
-            margin:0;
-            list-style:none;
-        }
-        .form-style-9 ul li{
-            display: block;
-            margin-bottom: 10px;
-            min-height: 35px;
-        }
-        .field-style{
-            box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            padding: 8px;
-            outline: none;
-            border: 1px solid #0168f8;
-            -webkit-transition: all 0.30s ease-in-out;
-            -moz-transition: all 0.30s ease-in-out;
-            -ms-transition: all 0.30s ease-in-out;
-            -o-transition: all 0.30s ease-in-out;
-
-
-        .form-style-9 ul li .field-full{
-            width: 100%;
-        }
-        .form-style-9 ul li input.align-left{
-            float:left;
-        }
-        .form-style-9 ul li input.align-right{
-            float:right;
-        }
-        .form-style-9 ul li textarea{
-            width: 100%;
-            height: 100px;
-        }
-
-
-
-    </style>
-
 
 @endsection
 
 @section('content')
-
+    <!--
     <div class="container">
         <form class="form-style-9 shadow-sm bg-light" autocomplete="on" method="POST" action="/processCreate">
             @csrf
@@ -148,6 +54,170 @@
     <br>
     <hr>
     <br>
+    -->
+
+    <div class="card">
+        <div class="card-header bg-secondary shadow-sm">
+            <h4 class="text-light font-weight-bold"> Register New Deed</h4>
+        </div>
+        <form class="search-form" style="" method="POST" action="/processCreate">
+            @csrf
+            <div class="card-body bg-light">
+                <table class="table table-borderless">
+                    <tr>
+                        <td colspan="2">
+                            <h5 class="text-black"> Deed</h5>
+                        </td>
+                    </tr>
+                    <tr class="text-dark">
+
+                        <td>
+                            <div class="input-group align-content-center">
+                                <label for="deed-title" class="mt-2 mr-2">Title: </label>
+                                <input type="text" class="form-control font-weight-bold" required name="deed_title" placeholder="Tittle of the deed">
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="input-group align-content-center">
+                                <label for="ref_num" class="mt-2 mr-2">Ref Num: </label>
+                                <input type="text" class="form-control font-weight-bold" required name="ref_num" placeholder="Deed Reference Number">
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr class="text-dark">
+
+                        <td>
+                            <div class="input-group align-content-center">
+                                <label for="title" class="mt-2 mr-2">Date: </label>
+                                <input type="text" class="form-control font-weight-bold"  name="date_created" placeholder="Date Created" required>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="input-group align-content-center">
+                                <label for="length" class="mt-2 mr-2">Length: </label>
+                                <input type="text" class="form-control ml-2 font-weight-bold" required name="length" placeholder="Length/Number of Pages">
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr class="text-dark">
+                        <td colspan="2">
+                            <div class="input-group">
+                                <label for="description" class="mt-3 mr-2">Description: </label> <br>
+                                <textarea name="description" class="form-control font-weight-bold" placeholder="Description" style="height: 80px" required></textarea>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <h5 class="text-black"> OWNER</h5>
+                        </td>
+                    </tr>
+
+                    <tr class="text-dark">
+
+                        <td>
+                            <div class="input-group align-content-center">
+                                <label for="owner-name" class="mt-2 mr-2">Name/Organisation </label>
+                                <input type="text" class="form-control font-weight-bold" required name="owner_name" placeholder="Name of Individual or Organisation">
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="input-group align-content-center">
+                                <label for="owner-title" class="mt-2 mr-2">Email: </label>
+                                <input type="email" class="form-control font-weight-bold" required name="owner_email" placeholder="Email">
+                            </div>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <h5 class="text-black"> CONVEYANCER</h5>
+                        </td>
+                    </tr>
+
+                    <tr class="text-dark">
+
+                        <td>
+                            <div class="input-group align-content-center">
+                                <label for="conveyancer_name" class="mt-2 mr-2">Name: </label>
+                                <input type="text" class="form-control font-weight-bold" required name="conveyancer_name" placeholder="Conveyancer Name">
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="input-group align-content-center">
+                                <label for="conveyancer_email" class="mt-2 mr-2">Email: </label>
+                                <input type="email" class="form-control font-weight-bold" required name="conveyancer_email" placeholder="Conveyancer Email">
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <div class="card-footer bg-secondary" style="border-radius: 4px">
+                                <input class="btn btn-dark font-weight-bold" type="submit" value="SUBMIT">
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </form><!-- search-form -->
+    </div>
+
+
+    <!--
+    OK so
+    1. TITTLE -these are the types of titles we have which are subject to circumstances around the transfer(a. Deed of grant
+    b. Tittle deed
+    c. Estate transfer
+    d.Deed of partition
+    e. Certificate of       registered tittle
+    f. certificate of consolidated tittle
+    g.  Sale in execution
+
+
+    2. CONVEYANCER- name of conveyancer and the name of the law firm
+    3. OWNER _Transferor  and I. D number, Transferee and I. D number (these can also be judicial persons e.g companies, estates,universities, corperatives etc
+
+    4. DESCRIPTION-  CERTAIN      piece of land situate in the District of Salisbury;
+
+    BEING           STAND 1583 SALISBURY TOWNSHIP;
+
+    MEASURING           Four Thousand Two Hundred and Eighty Seven conditional clause -describes the burdens (if any) that are on the land
+
+    5....please add a mortgage bond column cause some tittle deeds may have those registered on them
+    -->
 
 @endsection
 

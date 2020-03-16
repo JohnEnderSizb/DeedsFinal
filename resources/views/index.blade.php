@@ -47,11 +47,11 @@
                 </td>
 
                 <td>
-                    {{ $deed->title }}
+                    {{ $deed->deed_title }}
                 </td>
 
                 <td>
-                    {{ $deed->conveyancer }}
+                    {{ $deed->conveyancer_id }}
                 </td>
 
                 <td>
@@ -59,7 +59,7 @@
                 </td>
 
                 <td>
-                    {{ $deed->owner }}
+                    {{ $deed->deed_owner_id }}
                 </td>
 
                 <td>

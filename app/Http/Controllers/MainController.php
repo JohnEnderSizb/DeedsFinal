@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Conveyancer;
 use App\Deed;
+use App\DeedOwner;
 use App\Device;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -26,17 +28,23 @@ class MainController extends Controller
 
     public function processCreate(Request $request) {
 
-        $randomNumber = rand(10000000,99999999);
+        $conveyancer = Conveyancer::updateOrCreate(['email' => $request['conveyancer_email']], [
+            'name' => $request['conveyancer_name']
+        ]);
 
-        $qr_code = $request["ref_num"] . $randomNumber;
+        $owner = DeedOwner::updateOrCreate(['email' => $request['owner_email']], [
+            'name' => $request['owner_name']
+        ]);
+
 
 
         $deed = new Deed();
-            $deed->title = $request['title'];
-            $deed->conveyancer = $request['conveyancer'];
+            $deed->conveyancer_id = $conveyancer->id;
+            $deed->deed_owner_id = $owner->id;
+            $deed->deed_title = $request['deed_title'];
             $deed->ref_num = $request['ref_num'];
-            $deed->qr_code = $qr_code;
-            $deed->owner = $request['owner'];
+            $deed->date_created = $request['date_created'];
+            $deed->length = $request['length'];
             $deed->description = $request['description'];
 
             $deed->save();
@@ -48,7 +56,7 @@ class MainController extends Controller
     public function view( Deed $deed ) {
         $image = QrCode::format('png')->merge("logo.png", 0.3, true)
             ->size(200)->errorCorrection('H')->color(64, 64, 173)
-            ->generate($deed->qr_code);
+            ->generate($deed->id);
         return view("view", compact("deed", "image"));
     }
 
@@ -65,5 +73,17 @@ class MainController extends Controller
     }
     public function editDeed() {
 
+    }
+
+    function generateRandomString($n) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $randomString = '';
+
+        for ($i = 0; $i < $n; $i++) {
+            $index = rand(0, strlen($characters) - 1);
+            $randomString .= $characters[$index];
+        }
+
+        return $randomString;
     }
 }

@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use App\AppUser;
 use App\Deed;
+use App\DeedOwner;
+use App\ScanActivity;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Pusher\Pusher;
 
 class AppController extends Controller
 {
@@ -42,16 +45,43 @@ class AppController extends Controller
     }
 
     public function fetchDeed(Request $request) {
-        $result = DB::table('deeds')->where('qr_code', $request['qrCode'])->value('id');
+
+
+        $result = DB::table('deeds')->where('id', $request['qrCode'])->value('id');
 
         if ($result) {
             $theDeed = Deed::find($result);
+
+            $scanActivity = new ScanActivity();
+            $scanActivity->deed_owner = $theDeed->deed_owner_id;
+            //$scanActivity->deed_title = $theDeed->deed_title;
+            $scanActivity->deed_title = 1;
+            $scanActivity->conveyancer = $theDeed->conveyancer_id;
+            $scanActivity->scanner = $request['email'];
+            $scanActivity->save();
+
+
+            $theScanner = DB::table('app_users')->where('email', $request['email'])->first();
+
+            $channel = $request['email'];
+            $deedOwner = DeedOwner::find($theDeed->deed_owner_id);
+            $channel = $deedOwner->email;
+            $notify_message = json_encode(array(
+                'id' => $scanActivity->id,
+                'scanner_name' => $theScanner->name,
+                'scanner_email' => $theScanner->email,
+                'deed_title' => $scanActivity->deed_title,
+                'created_at' => $scanActivity->created_at,
+            ), JSON_FORCE_OBJECT);
+
+            $this->pusherNotify($channel, $notify_message);
+
             return response()->json(
                 [
                     'outcome' => 'success',
-                    'title' => $theDeed->title,
-                    'conveyancer' => $theDeed->conveyancer,
-                    'parties' => $theDeed->owner,
+                    'deed_title' => $theDeed->deed_title,
+                    'conveyancer' => DB::table('conveyancers')->where('id', $theDeed->conveyancer_id)->value('name'),
+                    'deed_owner' => $deedOwner->name,
                     'ref_num' => $theDeed->ref_num,
                     'summary' => $theDeed->description
                 ]
@@ -70,5 +100,21 @@ class AppController extends Controller
 
     }
 
+
+    public function pusherNotify($channel, $message){
+        $options = array(
+            'cluster' => env('PUSHER_APP_CLUSTER'),
+            'encrypted' => true
+        );
+        $pusher = new Pusher(
+            env('PUSHER_APP_KEY'),
+            env('PUSHER_APP_SECRET'),
+            env('PUSHER_APP_ID'),
+            $options
+        );
+
+        $data['message'] = $message;
+        $pusher->trigger($channel, 'App\\Events\\Notify', $data);
+    }
 
 }

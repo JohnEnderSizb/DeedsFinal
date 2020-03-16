@@ -44,3 +44,4 @@ Route::post('/devicesaction','DevicesController@storeDevice');
 //Route::post('/app/signup','AppController@signUp');
 
 Route::get('/notify','NotificationController@notify');
+Route::get('/test','TestController@notify');

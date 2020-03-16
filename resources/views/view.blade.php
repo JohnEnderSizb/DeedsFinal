@@ -19,7 +19,7 @@
                 <div class="card flex-md-row mb-4 h-md-250">
                     <div class="card-body d-flex flex-column align-items-start">
                         <h3 class="mb-0">
-                            <a class="text-dark" href="#">{{ $deed->title }}</a>
+                            <a class="text-dark" href="#">{{ $deed->deed_title }}</a>
                         </h3>
                         <div class="mb-1 text-muted">
                             <h4>
@@ -27,22 +27,10 @@
                                 {{ $deed->ref_num }}
                             </h4>
                         </div>
-                        <div class="mb-1 text-muted">
-                            <h4>
-                                <span class="text-primary"> Conveyancer: </span>
-                                {{ $deed->conveyancer }}
-                            </h4>
-                        </div>
-                        <div class="mb-1 text-muted">
-                            <h4>
-                                <span class="text-primary"> Owner </span>
-                                {{ $deed->owner }}
-                            </h4>
-                        </div>
                     </div>
                     <img class="card-img-right flex-auto d-none d-md-block" style="width: 200px" src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->merge('logo.png', 0.3, true)
                         ->size(150)->errorCorrection('H')->color(64, 64, 173)
-                        ->generate($deed->qr_code)) !!} ">
+                        ->generate($deed->id)) !!} ">
                 </div>
                 <br>
                 <h4 class="text-primary">Description</h4>
@@ -55,7 +43,7 @@
                     <tr>
                         <td> <button class="btn btn-outline-info">Send QR-Code Via Email</button> </td>
                         <td>
-                            <a href="/view/qr_code/{{ $deed->qr_code }}" download="qr_code_{{ $deed->id }}">
+                            <a href="/view/qr_code/{{ $deed->id }}" download="qr_code_{{ $deed->id }}">
                                 <button class="btn btn-outline-info">Download QR-Code</button>
                             </a>
                         </td>
