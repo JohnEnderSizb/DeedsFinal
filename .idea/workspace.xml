@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32f13a2-22e3-41a1-9f22-9578cc7efe61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Conveyancer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/DeedOwner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ScanActivity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ScanActivityNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_111350_create_deed_owners_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_111441_create_conveyancers_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_111457_create_scan_activities_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_15_133433_create_scan_activity_notifications_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env_remote" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env_local" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_17_193422_create_deeds_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_17_193422_create_deeds_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/index_blade.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index_blade.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +175,7 @@
       <workItem from="1584184630643" duration="1309000" />
       <workItem from="1584202576513" duration="4144000" />
       <workItem from="1584211473980" duration="26992000" />
-      <workItem from="1584340563605" duration="4765000" />
+      <workItem from="1584340563605" duration="5969000" />
     </task>
     <servers />
   </component>
