@@ -57,7 +57,7 @@
     -->
 
     <div class="card">
-        <div class="card-header bg-secondary shadow-sm">
+        <div class="card-header bg-dark shadow-sm">
             <h4 class="text-light font-weight-bold"> Register New Deed</h4>
         </div>
         <form class="search-form" style="" method="POST" action="/processCreate">
@@ -183,8 +183,8 @@
 
                     <tr>
                         <td colspan="2">
-                            <div class="card-footer bg-secondary" style="border-radius: 4px">
-                                <input class="btn btn-dark font-weight-bold" type="submit" value="SUBMIT">
+                            <div class="card-footer bg-dark" style="border-radius: 4px">
+                                <input class="btn btn-secondary font-weight-bold" type="submit" value="SUBMIT">
                             </div>
                         </td>
                     </tr>

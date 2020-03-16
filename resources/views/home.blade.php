@@ -128,31 +128,8 @@
 
     <div class="bg-img">
         <div class="water-mark">
-            <div class="content-body">
-                <div class="container pd-x-0">
-                    <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
-                        <div>
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                                    <li class="breadcrumb-item mt-2"><a href="#">Dashboard</a></li>
-                                    <li class="breadcrumb-item active mt-2" aria-current="page">Home</li>
-                                    <li class="mt-1 ml-4">
-                                        <a href="#" title="Refresh">
-                                            <i data-feather="refresh-ccw" class="text-secondary" style="float: right; width: 18px"></i>
-                                        </a>
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-
-                    </div>
-
-                    <div class="container-fluid">
-
-                        @yield('content')
-
-                    </div><!-- row -->
-                </div><!-- container -->
+            <div class="content-body pd-0 m-0">
+                @yield('content')
             </div>
         </div>
     </div>
