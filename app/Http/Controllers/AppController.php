@@ -70,7 +70,7 @@ class AppController extends Controller
                 'id' => $scanActivity->id,
                 'scanner_name' => $theScanner->name,
                 'scanner_email' => $theScanner->email,
-                'deed_title' => $scanActivity->deed_title,
+                'deed_title' => $theDeed->deed_title,
                 'created_at' => $scanActivity->created_at,
             ), JSON_FORCE_OBJECT);
 
@@ -102,6 +102,7 @@ class AppController extends Controller
 
 
     public function pusherNotify($channel, $message){
+        error_log("Foooooooooooooooooooooooooooooooooooooooooooooooooooood!!");
         $options = array(
             'cluster' => env('PUSHER_APP_CLUSTER'),
             'encrypted' => true
