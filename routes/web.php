@@ -14,12 +14,15 @@
 header('Access-Control-Allow-Origin: *');
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
+
+Route::get('/lg2', 'TestController@lg2');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 
 
 Route::middleware('auth')->group(function () {

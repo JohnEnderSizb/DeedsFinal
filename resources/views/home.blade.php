@@ -128,7 +128,7 @@
 
     <div class="bg-img">
         <div class="water-mark">
-            <div class="content-body pd-0 m-0">
+            <div class="content-body pd-2 m-2">
                 @yield('content')
             </div>
         </div>

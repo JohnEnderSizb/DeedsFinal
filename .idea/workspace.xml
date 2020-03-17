@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32f13a2-22e3-41a1-9f22-9578cc7efe61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/now-ui-kit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/nucleo-license.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/nucleo-outline.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/nucleo-outline.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/nucleo-outline.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/nucleo-outline.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gavel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo_transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login2.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,16 +159,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/auth" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/auth" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\JSiziba\Desktop\Ender\Deeds\public" />
-      <recent name="C:\Users\JSiziba\Desktop\Ender\Deeds\resources\views" />
-      <recent name="C:\Users\JSiziba\Desktop\Ender\Deeds\resources\views\devices" />
-      <recent name="C:\Users\JSiziba\Desktop\Ender\Deeds\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -177,7 +199,7 @@
       <workItem from="1584184630643" duration="1309000" />
       <workItem from="1584202576513" duration="4144000" />
       <workItem from="1584211473980" duration="26992000" />
-      <workItem from="1584340563605" duration="11463000" />
+      <workItem from="1584340563605" duration="17711000" />
     </task>
     <servers />
   </component>
@@ -223,18 +245,18 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="635" y="354" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1581977583054" />
-    <state x="358" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1584211535399">
+    <state x="358" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1584434902260">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="335" y="317" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1582334995313" />
     <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584211535399" />
-    <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746@0.0.1366.746" timestamp="1583855910150" />
-    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup" timestamp="1584361551015">
+    <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746@0.0.1366.746" timestamp="1584434902260" />
+    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup" timestamp="1584375513369">
       <screen x="0" y="0" width="1366" height="746" />
     </state>
     <state x="370" y="206" width="672" height="776" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1582390867959" />
     <state x="395" y="156" width="718" height="589" key="search.everywhere.popup/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584279648588" />
-    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup/0.0.1366.746@0.0.1366.746" timestamp="1584361551015" />
+    <state x="395" y="156" width="718" height="589" key="search.everywhere.popup/0.0.1366.746@0.0.1366.746" timestamp="1584375513369" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1582059636508" />
   </component>
 </project>

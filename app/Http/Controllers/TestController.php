@@ -26,4 +26,9 @@ class TestController extends Controller
         $data['message'] = $message;
         $pusher->trigger($channel, 'App\\Events\\Notify', $data);
     }
+
+    public function lg2()
+    {
+        return view('auth.login2');
+    }
 }
