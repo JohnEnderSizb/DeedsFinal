@@ -54,9 +54,9 @@ class MainController extends Controller
     }
 
     public function view( Deed $deed ) {
-        $image = QrCode::format('png')->merge("logo.png", 0.3, true)
-            ->size(200)->errorCorrection('H')->color(64, 64, 173)
-            ->generate($deed->id);
+        //$image = QrCode::format('png')->merge("logo.png", 0.3, true)
+          //  ->size(200)->errorCorrection('H')->color(64, 64, 173)
+            //->generate($deed->id);
         return view("view", compact("deed", "image"));
     }
 
