@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateScanActivitiesTable extends Migration
+class CreateLogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateScanActivitiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('scan_activities', function (Blueprint $table) {
+        Schema::create('logs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('deed_owner');
-            $table->string('deed_title');
-            $table->unsignedBigInteger('conveyancer');
-            $table->string('scanner');
+            $table->unsignedBigInteger('deed_id')->nullable();
+            $table->unsignedBigInteger('app_user_id');
+            $table->boolean('wasFound');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateScanActivitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('scan_activities');
+        Schema::dropIfExists('logs');
     }
 }

@@ -28,13 +28,33 @@ class MainController extends Controller
 
     public function processCreate(Request $request) {
 
+        /*
         $conveyancer = Conveyancer::updateOrCreate(['email' => $request['conveyancer_email']], [
             'name' => $request['conveyancer_name']
         ]);
+        */
 
-        $owner = DeedOwner::updateOrCreate(['email' => $request['owner_email']], [
-            'name' => $request['owner_name']
-        ]);
+        $conveyancer = new Conveyancer();
+        $conveyancer->name = $request['conveyancer_name'];
+        $conveyancer->email = $request['conveyancer_email'];
+        $conveyancer->save();
+
+        /*
+        $owner = DeedOwner::updateOrCreate(['email' => $request['owner_email']],
+            ['name' => $request['owner_name']],
+            ['phone' => $request['owner_phone']],
+            ['whatsapp' => $request['owner_whatsapp']],
+            ['sms' => $request['owner_sms']]
+        );
+        */
+
+        $owner = new DeedOwner();
+        $owner->email = $request['owner_email'];
+        $owner->name = $request['owner_name'];
+        $owner->phone = $request['owner_phone'];
+        $owner->whatsapp = $request['owner_whatsapp'];
+        $owner->sms = $request['owner_sms'];
+        $owner->save();
 
 
 
@@ -47,9 +67,10 @@ class MainController extends Controller
             $deed->length = $request['length'];
             $deed->description = $request['description'];
 
+
             $deed->save();
 
-        return redirect('/home');
+        return redirect('/deeds');
 
     }
 
@@ -57,7 +78,7 @@ class MainController extends Controller
         //$image = QrCode::format('png')->merge("logo.png", 0.3, true)
           //  ->size(200)->errorCorrection('H')->color(64, 64, 173)
             //->generate($deed->id);
-        return view("view", compact("deed"));
+        return view("view_deed", compact("deed"));
     }
 
     public function qr_code($qr_code) {

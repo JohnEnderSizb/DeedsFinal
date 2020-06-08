@@ -55,6 +55,9 @@
 
     </div>
 
+    <hr>
+
+
 @endsection
 
 @section('scripts')

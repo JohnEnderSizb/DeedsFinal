@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012'),
+            linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+            background-repeat: no-repeat, repeat;
+            background-position: right .7em top 50%, 0 0;
+            background-size: .65em auto, 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="results" style="min-height: 100vh; ">
+
+        <div class="jello animated illustration text-center mb-3 mt-2">
+            <img src="assets/logo.png" alt="" style="height: 90px" class="rounded-circle shadow">
+        </div>
+
+        <h3 class="text-black text-center text-capitalize mt-2" style="text-shadow: #213458 0.05em 0.05em 0.06em;" id="title">Lorem Ipsum Dolor Sit Immer</h3>
+
+        <h3 class="text-center">Johnson Siziba</h3>
+
+        <table class="table table-bordered">
+            <tr>
+                <td>Ref. Num</td>
+                <td>##########</td>
+            </tr>
+
+            <tr>
+                <td>Length</td>
+                <td>##########</td>
+            </tr>
+
+            <tr>
+                <td>Conveyancer</td>
+                <td>##########</td>
+            </tr>
+
+            <tr>
+                <td>Deed Creation Date</td>
+                <td>##########</td>
+            </tr>
+
+            <tr>
+                <td>Date Added</td>
+                <td>##########</td>
+            </tr>
+
+            <tr>
+                <td>Last Updated</td>
+                <td>##########</td>
+            </tr>
+
+        </table>
+
+
+        <p class="text-dark" id="summary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur cumque, error est illum ut?
+            Ab debitis dolorem explicabo in modi neque nihil nisi numquam porro provident, quo recusandae, velit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur cumque, error est illum ut?
+            Ab debitis dolorem explicabo in modi neque nihil nisi numquam porro provident, quo recusandae, velit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur cumque, error est illum ut?
+            Ab debitis dolorem explicabo in modi neque nihil nisi numquam porro provident, quo recusandae, velit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur cumque, error est illum ut?
+        </p>
+        <hr>
+        <h4 class="text-dark">Contact Owner:</h4>
+
+        <table class="table table-bordered">
+            <tr>
+                <td>Phone</td>
+                <td>
+                    <a href="tel:+263784310119">
+                        <img src="assets/call.png" alt="">
+                        CLICK TO CALL
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>WhatsApp</td>
+                <td>
+                    <a href="https://wa.me/263784310119">
+                        <img src="assets/whatsapp.png" alt="">
+                        CLICK TO CHAT
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <a href="mailto:siziba.uz@outlook.com">
+                        <img src="assets/email.png" alt="">
+                        CLICK TO EMAIL
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>SMS</td>
+                <td>
+                    <a href="sms:+263784310119">
+                        <img src="assets/sms.png" alt="">
+                        CLICK TO SMS
+                    </a>
+                </td>
+            </tr>
+
+        </table>
+
+        <br><br><br>
+    </div>
+
+    <div class="container" id="none" style="min-height: 100vh; display: none">
+            <div class="text-center mt-5">
+                <img src="assets/eye-off.svg" alt="" style="height: 35px">
+                <hr>
+                <p class="text-dark">
+                    That document is not registered on our system.
+                </p>
+            </div>
+    </div>
+
+    <div class="container" style="position: fixed; bottom: 0; width: 100vw; left: 0; height: 60px; background: #213458">
+        <table class="table table-borderless">
+            <tr>
+                <td>
+                    <button class="btn btn-outline-primary" onclick="home()">Home</button>
+                </td>
+                <td class="text-right">
+                    <button class="btn btn-outline-primary" onclick="scanNext()">Scan Next</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/pusher.min.js"></script>
+    <script src="assets/js/masterscript.js"></script>
+
+    <script>
+        function scanNext(){
+            return JSReceiver.scanNext();
+        }
+
+        function home(){
+            return JSReceiver.home();
+        }
+
+
+        function getQrCode(){
+            return JSReceiver.getQrCode();
+        }
+
+        function getUserEmail(){
+            return JSReceiver.getUserEmail()
+        }
+
+        $(document).ready(function() {
+            fetchDeed()
+        });
+
+        function fetchDeed(){
+            JSReceiver.openProgDialog();
+            $.ajax({
+                url:DOMAIN + "app/deeds/fetch",
+                type:"POST",
+                data:{
+                    qrCode: getQrCode(),
+                    email: getUserEmail(),
+                },
+                success:function(response) {
+                    console.log(response);
+                    JSReceiver.closeProgDialog();
+                    if(response.outcome == "success") {
+                        //display
+                        $('#title').text(response.deed_title);
+                        $('#conveyancer').text(response.conveyancer);
+                        $('#parties').text(response.deed_owner);
+                        $('#ref_num').text(response.ref_num);
+                        //$('#date').text(response.title);
+                        $('#summary').text(response.summary);
+                        $('#results').show('fast');
+                    }
+                    else if (response.outcome == "none"){
+                        $('#none').show('fast');
+                    }
+
+                },
+                error:function(){
+                    JSReceiver.closeProgDialog();
+                    JSReceiver.openErrorDialog();
+                }
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>

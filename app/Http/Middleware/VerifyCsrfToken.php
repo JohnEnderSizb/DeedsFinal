@@ -22,6 +22,9 @@ class VerifyCsrfToken extends Middleware
         '/app/signup',
         '/app/deeds/fetch',
         '/app/login',
-        '/notify'
+        '/notify',
+        '/mobile/notifications/{email}',
+        '/mobile/markasread/{notification}',
+
     ];
 }

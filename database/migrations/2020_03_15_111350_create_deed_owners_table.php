@@ -17,6 +17,9 @@ class CreateDeedOwnersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email');
+            $table->string('phone');
+            $table->string('whatsapp');
+            $table->string('sms');
             $table->timestamps();
         });
     }

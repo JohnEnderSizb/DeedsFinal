@@ -20,6 +20,10 @@ class CreateAppUsersTable extends Migration
             $table->string('organisation');
             $table->string('position');
             $table->string('password');
+            $table->string('city')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('whatsapp')->nullable();
+            $table->string('sms')->nullable();
             $table->string('email_verify')->default('0');;
             $table->timestamps();
         });

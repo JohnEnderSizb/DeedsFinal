@@ -21,7 +21,8 @@ class CreateDeedsTable extends Migration
             $table->string('ref_num');
             $table->string('date_created');
             $table->string('length');
-            $table->string('description');
+            $table->longText('description');
+            $table->bigInteger('scanCount')->default(0);
             $table->timestamps();
         });
     }
