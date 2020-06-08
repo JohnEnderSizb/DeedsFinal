@@ -72,7 +72,6 @@
 
     <script src="{{ asset('mobile/js/jquery.min.js') }}"></script>
     <script src="{{ asset('mobile/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('mobile/js/pusher.min.js') }}"></script>
     <script src="{{ asset('mobile/js/masterscript.js') }}"></script>
 
 
