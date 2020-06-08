@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <h>Food</h>
     <div class="container" id="results" style="min-height: 100vh; ">
         <table class="table" style="font-family: Arial,serif">
             @foreach($logs as $log)
