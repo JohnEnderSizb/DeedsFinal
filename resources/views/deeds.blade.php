@@ -27,13 +27,13 @@
 
           Tip 2: you can also add an image using data-image tag
       -->
-        <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+        <div class="logo"><a href="#" class="simple-text logo-normal">
                 DeedScan
             </a></div>
         <div class="sidebar-wrapper">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="./dashboard.html">
+                    <a class="nav-link" href="/dashboard">
                         <i class="material-icons">dashboard</i>
                         <p>Dashboard</p>
                     </a>
@@ -45,37 +45,37 @@
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./tables.html">
+                    <a class="nav-link" href="">
                         <i class="material-icons">mail</i>
                         <p>Messages</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./typography.html">
+                    <a class="nav-link" href="">
                         <i class="material-icons">notifications</i>
                         <p>Notifications</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./icons.html">
+                    <a class="nav-link" href="">
                         <i class="material-icons">settings</i>
                         <p>Settings</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./map.html">
+                    <a class="nav-link" href="">
                         <i class="material-icons">language</i>
                         <p>Menu</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./notifications.html">
+                    <a class="nav-link" href="">
                         <i class="material-icons">language</i>
                         <p>Menu</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./rtl.html">
+                    <a class="nav-link" href="">
                         <i class="material-icons">language</i>
                         <p>Support</p>
                     </a>
