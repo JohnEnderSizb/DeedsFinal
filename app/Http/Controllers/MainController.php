@@ -83,7 +83,7 @@ class MainController extends Controller
 
     public function qr_code($qr_code) {
         $pngImage = QrCode::format('png')
-            ->size(500)->errorCorrection('H')->color(64, 64, 173)
+            ->size(500)->errorCorrection('H')->color(0, 0, 0)
             ->generate($qr_code);
 
         return response($pngImage)->header('Content-type','image/png');

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32f13a2-22e3-41a1-9f22-9578cc7efe61" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/deeds.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/deeds.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/view_deed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view_deed.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +181,8 @@
       <workItem from="1591096754391" duration="13484000" />
       <workItem from="1591365084579" duration="5323000" />
       <workItem from="1591428424177" duration="204000" />
-      <workItem from="1591601726564" duration="33944000" />
+      <workItem from="1591601726564" duration="35534000" />
+      <workItem from="1592597102997" duration="157000" />
     </task>
     <servers />
   </component>
@@ -192,10 +193,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="431" y="224" width="537" height="383" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583851837410">
-      <screen x="0" y="0" width="1366" height="746" />
-    </state>
-    <state x="431" y="224" width="537" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.746@0.0.1366.746" timestamp="1583851837410" />
     <state x="410" y="164" width="525" height="410" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591630488595">
       <screen x="0" y="0" width="1366" height="748" />
     </state>
@@ -205,22 +202,6 @@
     </state>
     <state x="452" y="161" width="524" height="480" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584279712624" />
     <state x="452" y="161" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.746@0.0.1366.746" timestamp="1584571297302" />
-    <state width="1324" height="179" key="GridCell.Tab.0.bottom" timestamp="1583850422276">
-      <screen x="0" y="0" width="1366" height="746" />
-    </state>
-    <state width="1324" height="179" key="GridCell.Tab.0.bottom/0.0.1366.746@0.0.1366.746" timestamp="1583850422276" />
-    <state width="1324" height="179" key="GridCell.Tab.0.center" timestamp="1583850422276">
-      <screen x="0" y="0" width="1366" height="746" />
-    </state>
-    <state width="1324" height="179" key="GridCell.Tab.0.center/0.0.1366.746@0.0.1366.746" timestamp="1583850422276" />
-    <state width="1324" height="179" key="GridCell.Tab.0.left" timestamp="1583850422275">
-      <screen x="0" y="0" width="1366" height="746" />
-    </state>
-    <state width="1324" height="179" key="GridCell.Tab.0.left/0.0.1366.746@0.0.1366.746" timestamp="1583850422275" />
-    <state width="1324" height="179" key="GridCell.Tab.0.right" timestamp="1583850422276">
-      <screen x="0" y="0" width="1366" height="746" />
-    </state>
-    <state width="1324" height="179" key="GridCell.Tab.0.right/0.0.1366.746@0.0.1366.746" timestamp="1583850422276" />
     <state x="448" y="102" width="459" height="539" key="NewPhpClassDialog" timestamp="1591630501410">
       <screen x="0" y="0" width="1366" height="748" />
     </state>
@@ -230,11 +211,11 @@
     </state>
     <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584211535399" />
     <state x="358" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.746@0.0.1366.746" timestamp="1585710736825" />
-    <state x="395" y="156" width="718" height="591" key="search.everywhere.popup" timestamp="1591656308598">
+    <state x="395" y="156" width="718" height="591" key="search.everywhere.popup" timestamp="1592597237281">
       <screen x="0" y="0" width="1366" height="748" />
     </state>
     <state x="395" y="156" width="718" height="589" key="search.everywhere.popup/0.0.1366.746/1366.0.1920.1080@0.0.1366.746" timestamp="1584279648588" />
     <state x="395" y="156" width="718" height="589" key="search.everywhere.popup/0.0.1366.746@0.0.1366.746" timestamp="1584566409969" />
-    <state x="395" y="156" width="718" height="591" key="search.everywhere.popup/0.0.1366.748@0.0.1366.748" timestamp="1591656308598" />
+    <state x="395" y="156" width="718" height="591" key="search.everywhere.popup/0.0.1366.748@0.0.1366.748" timestamp="1592597237281" />
   </component>
 </project>

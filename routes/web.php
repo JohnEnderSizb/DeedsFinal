@@ -24,7 +24,7 @@ Auth::routes();
 
 
 
-Route::get('/mobile/logs', 'AppController@logs');
+Route::get('/mobile/logs/{email}', 'AppController@logs');
 Route::get('/mobile/markasread/{notification}', 'AppController@markNotificationAsRead');
 Route::get('/mobile/markallasread/{notification}', 'AppController@markAllAsRead');
 Route::get('/mobile/viewprofile/user', 'AppController@viewProfile');

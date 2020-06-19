@@ -121,8 +121,9 @@ class AppController extends Controller
         $pusher->trigger($channel, 'App\\Events\\Notify', $data);
     }
 
-    public function logs() {
-        $logs = DB::table('logs')->orderBy('id', 'desc')->paginate(15);
+    public function logs($email) {
+        $theUser = DB::table('app_users')->where('email', $email)->first();
+        $logs = DB::table('logs')->where('app_user_id', $theUser->id)->orderBy('id', 'desc')->paginate(15);
         return view('mobile.logs', compact('logs'));
     }
 
@@ -130,7 +131,7 @@ class AppController extends Controller
         $theUser = AppUser::where('email', $email)
             ->first();
         $theUser = DB::table('app_users')->where('email', $email)->first();
-        $notifications = DB::table('notifications')->orderBy('id', 'desc')->paginate(35);
+        $notifications = DB::table('notifications')->where('app_user_id', $theUser->id)->orderBy('id', 'desc')->paginate(35);
         $unseenCount = 0;
         foreach ($notifications as $alert){
             if($alert->seen == 0 ) {
