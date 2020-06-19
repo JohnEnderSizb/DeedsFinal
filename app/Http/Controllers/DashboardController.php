@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\DB;
 class DashboardController extends Controller
 {
     public function index(){
-        return view("dashboard");
+        $appUsers = DB::table('app_users')->orderBy('id', 'desc')->paginate(15);
+        return view("dashboard", compact("appUsers"));
     }
 
     public function notifications(){
